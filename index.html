@@ -62,9 +62,9 @@
 <h1>Registration form</h1>
 <form>
      <label for="">Name:</label> 
-    <input type="text"/>
+    <input type="text" id="fullname" name="full_name"/> <required/> <br> <br>
     <label for="">Age:</label>
-    <input type="number"> <br> <br>
+    <input type="number" id="age" name="user_age"> <required/> <br> <br>
     <label type="">Gender:</label> 
     <input type="Radio" name="gender" value="Female"> Female 
     <input type="radio" name="female" value="Male"> Male <br> <br>
@@ -83,7 +83,18 @@
 <input type="Email">
 <label for="">Password:</label>
 <input type="password"> <br> <br>
-<input type="submit" value="Submit">
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="10" cols="50"></textarea> <br>
+
+<input type="submit" value="Submit"> <br> <br>
+<label for="">Date:</label> 
+<input type="Date" value="Date"> 
+<p>
+<form action="https://www.google.com/ method="get" target=" _blank">
+    <label for="">Search</label>
+    <input type="text" name="q" id="query" >
+    <input type="submit" value="Search from Google">
+</p>
 </form>
 </body>
 </html>
